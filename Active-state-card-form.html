@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active state card form</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" href="./imágenes/favicon-32x32.png" type="/image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main-block">
+        <div class="block-1"> <!--block-1-->
+            <div> <!--IMAGEN BACKGROUND-->
+                <img class="block-1__img-background" src="./imágenes/bg-main-desktop.png" alt=""/>
+            </div>
+            <div> <!--TARJETA DE FRENTE-->
+                <div>
+                    <img class="block-1__img-card-front" src="./imágenes/bg-card-front.png" alt="card front"/>
+                </div>
+                <div>
+                    <img class="block-1__img-card-front__card-logo" src="./imágenes/card-logo.svg" alt="card-logo"/>
+                </div>
+                <p class="block-1__img-card-front__number">0000 0000 0000 0000</p>
+                <P class="block-1__img-card-front__name">JANE APPLESEED</P>
+                <P class="block-1__img-card-front__exp-date">00/00</P>
+            </div>
+            <div> <!--TARJETA DE DORSO-->
+                <div>
+                    <img class="block-1__img-card-back" src="./imágenes/bg-card-back.png" alt="card back"/>
+                </div>
+                <p class="block-1__img-card-back__cbc">000</p>
+            </div>
+        </div>
+        <div class="block-2__contenedor"> <!--block-2-FORMULARIO-->
+            <form class="block-2__form">
+                <div>
+                    <label for="name" class="block-2__cardholder-label"><b>CARDHOLDER NAME</b></label>
+                    <input class="block-2__cardholder-input" type="text" name="name" id="name" placeholder="e.g. Jane Appleseed "/>
+                </div>
+                <div>
+                   <label for="number" class="block-2__card-number-label"><b>CARD NUMBER</b></label>
+                    <input class="block-2__form-error-input block-2__card-number-input" type="text" name="number" id="number" placeholder="1234 5678 9123 0000"/>
+                    <div class="block-2__form-error-message">Wrong format, number only</div>
+                </div>
+                <div>
+                    <label for="date" class="block-2__card-exp-date-label"><b>EXP. DATE (MM/YY)</b></label>
+
+                    <label for="cvc" class="block-2__card-cvc-label"><b>CVC</b></label>
+
+                    <input class="block-2__card-exp-date-mm-input" type="text" name="date" id="date" placeholder="MM"/>
+
+                    <input class="block-2__card-exp-date-yy-input block-2__form-error-input" type="text" placeholder="YY"/>
+
+                    <input class="block-2__card-cvc-input" type="text" name="cvc" id="cvc" placeholder="e.g. 123"/>
+                    <p class="block-2__form-error-message">Can't be blank</p>
+                </div>      
+                <input class="block-2__button" type="submit" value="Confirm">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
